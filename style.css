@@ -1365,3 +1365,110 @@ footer,
     transition-duration: 0.001ms !important;
   }
 }
+
+/* =========================
+      POEM PAGE
+========================= */
+
+.poem{
+    max-width:780px;
+    margin:40px auto;
+    padding:55px;
+
+    background:#fffaf5;
+    border-radius:30px;
+
+    border:1px solid rgba(0,0,0,.08);
+
+    box-shadow:
+    0 25px 60px rgba(0,0,0,.12);
+
+    text-align:center;
+
+    display:none;
+
+    opacity:0;
+    transform:translateY(40px);
+
+    transition:.8s;
+}
+
+.poem.show{
+    display:block;
+    opacity:1;
+    transform:translateY(0);
+}
+
+.poem h2{
+
+    font-family:var(--script);
+
+    font-size:42px;
+
+    color:#610505;
+
+    margin-bottom:35px;
+
+}
+
+.poem p{
+
+    white-space:pre-line;
+
+    font-family:var(--serif);
+
+    font-size:23px;
+
+    line-height:2.2;
+
+    color:#3e3232;
+
+}
+
+.signature{
+
+    display:block;
+
+    margin-top:60px;
+
+    font-family:var(--script);
+
+    font-size:34px;
+
+    color:#610505;
+
+}
+
+/* little floating hearts */
+
+.poem::before{
+
+    content:"♡";
+
+    position:absolute;
+
+    top:20px;
+
+    left:30px;
+
+    font-size:26px;
+
+    color:#d8b4a0;
+
+}
+
+.poem::after{
+
+    content:"✦";
+
+    position:absolute;
+
+    right:30px;
+
+    bottom:20px;
+
+    color:#d8b4a0;
+
+    font-size:22px;
+
+}
