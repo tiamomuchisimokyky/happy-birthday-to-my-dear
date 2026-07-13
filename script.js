@@ -253,7 +253,6 @@ const poemBtn = $('#poemBtn');
 const poem = $('#poem');
 
 const poemText = `whilom,
-
 i found no reason
 to believe
 that love
@@ -329,9 +328,7 @@ could ever alter
 the quiet certainty
 
 that my heart
-
 was always
-
 meant for you.`;
 
 let poemTyped = false;
