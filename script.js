@@ -230,13 +230,13 @@ cutCakeBtn?.addEventListener('click', async () => {
   cake.classList.add('blow');
   await wait(1500);
 
-  cakeStageText.textContent = ' cake is cutting 🔪';
+  cakeStageText.textContent = ' cake is cutting nowww tehe ≽^•⩊•^≼';
   cutCakeBtn.textContent = '';
   cake.classList.add('knife-in');
   await wait(1200);
 
   cakeStageText.textContent = ' into a slice... 🍰';
-  cutCakeBtn.textContent = 'Cutting Slice...';
+  cutCakeBtn.textContent = 'cutting Slice...';
   cake.classList.add('sliced');
   await wait(900);
 
