@@ -249,10 +249,23 @@ cutCakeBtn?.addEventListener('click', async () => {
 });
 
 // ===== Poem Typewriter =====
-const poemBtn = $('#poemBtn');
-const poem = $('#poem');
+<header class="sub-hero reveal">
+    <p class="script-text">for the one my heart was always meant for</p>
 
-const poemText = `whilom,
+    <h1>whilom</h1>
+
+    <p>click below to unfold my heart ♡</p>
+
+    <button class="btn primary" id="poemBtn">
+        open my heart
+    </button>
+
+    <div class="poem glass" id="poem">
+
+        <h2>for kyle,</h2>
+
+        <p> 
+  `whilom,
 i found no reason
 to believe
 that love
@@ -329,28 +342,14 @@ the quiet certainty
 
 that my heart
 was always
-meant for you.`;
+meant for you.`; 
+</p>
 
-let poemTyped = false;
+        <span class="signature">
+            ♡<br>
+            always yours,<br>
+            diana
+        </span>
 
-if (poemBtn && poem) {
-  poem.style.whiteSpace = 'pre-line';
-  poem.textContent = '';
-
-  poemBtn.addEventListener('click', () => {
-    if (poemTyped) return;
-
-    poemTyped = true;
-    let i = 0;
-
-    const typing = setInterval(() => {
-      poem.textContent += poemText[i] || '';
-      i++;
-
-      if (i > poemText.length) {
-        clearInterval(typing);
-        poemBtn.style.display = 'none';
-      }
-    }, 35);
-  });
-}
+    </div>
+</header>
