@@ -353,3 +353,28 @@ if (poemBtn && poem) {
     }, 35);
   });
 }
+
+// ===== POEM =====
+
+const poemBtn = document.getElementById("poemBtn");
+const poem = document.getElementById("poem");
+
+if(poemBtn && poem){
+
+    poemBtn.addEventListener("click",()=>{
+
+        poem.classList.add("show");
+
+        poemBtn.style.display="none";
+
+        poem.scrollIntoView({
+
+            behavior:"smooth",
+
+            block:"start"
+
+        });
+
+    });
+
+}
