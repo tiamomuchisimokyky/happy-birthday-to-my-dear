@@ -1322,12 +1322,35 @@ footer,
     height: 320px;
   }
 
-  .cake-stage-text {
-    width: min(100%, 330px);
-    margin-bottom: 12px;
-    padding: 12px 16px;
-    white-space: normal;
-  }
+  .cakeStageText{
+    display: inline-block;
+
+    padding: 14px 34px;
+
+    background: rgba(255,255,255,.85); /* keeps it white */
+
+    color: var(--cocoa); /* brown text */
+
+    border: 1px solid rgba(255,255,255,.6);
+
+    border-radius: 999px;
+
+    font-family: var(--serif);
+
+    font-size: 1.15rem;
+
+    font-weight: 600;
+
+    text-align: center;
+
+    box-shadow:
+        0 10px 30px rgba(62,50,50,.08),
+        inset 0 1px 0 rgba(255,255,255,.8);
+
+    backdrop-filter: blur(10px);
+
+    transition: .3s ease;
+}
 
   .cake {
     margin-bottom: -10px;
