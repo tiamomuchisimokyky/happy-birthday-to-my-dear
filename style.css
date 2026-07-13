@@ -1475,3 +1475,43 @@ footer,
     font-size:22px;
 
 }
+
+.poem{
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+.poem::before{
+
+    animation:floatHeart 5s infinite ease-in-out;
+
+}
+
+.poem::after{
+
+    animation:floatStar 6s infinite ease-in-out;
+
+}
+
+@keyframes floatHeart{
+
+    50%{
+
+        transform:translateY(-10px);
+
+    }
+
+}
+
+@keyframes floatStar{
+
+    50%{
+
+        transform:translateY(10px);
+
+    }
+
+}
