@@ -24,7 +24,10 @@ body {
   overflow-x: hidden;
   color: var(--cocoa);
   font-family: var(--body);
-  background: radial-gradient(circle at top left, #fff 0%, var(--warm-white) 35%, var(--blush) 100%);
+ background: radial-gradient(circle at top left,
+#fff 0%,
+#fdf8f6 35%,
+var(--blush) 100%);
 }
 
 a {
