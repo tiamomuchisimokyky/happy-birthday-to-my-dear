@@ -252,8 +252,7 @@ cutCakeBtn?.addEventListener('click', async () => {
 const poemBtn = $('#poemBtn');
 const poem = $('#poem');
 
-...
-`whilom,
+const poemText = `whilom,
 i found no reason
 to believe
 that love
@@ -331,6 +330,7 @@ the quiet certainty
 that my heart
 was always
 meant for you.`; 
+
 let poemTyped = false;
 
 if (poemBtn && poem) {
