@@ -401,8 +401,16 @@ button {
   width: 100%;
   height: 180px;
   border-radius: 18px;
-  background: linear-gradient(135deg, var(--rose), #fff);
-  box-shadow: 0 30px 70px rgba(62, 50, 50, 0.14);
+
+  background: linear-gradient(
+      135deg,
+      #4b0008,
+      #610505,
+      #7b0d15
+  );
+
+  box-shadow:
+      0 30px 70px rgba(97, 5, 5, .35);
 }
 
 .flap {
@@ -411,10 +419,19 @@ button {
   left: 8%;
   width: 84%;
   height: 160px;
-  background: var(--champagne);
+
+  background: linear-gradient(
+      135deg,
+      #7b0d15,
+      #610505,
+      #430004
+  );
+
   clip-path: polygon(50% 100%, 0 0, 100% 0);
+
   transform-origin: top;
-  transition: 0.7s;
+
+  transition: .7s;
 }
 
 .envelope.open .flap {
@@ -422,28 +439,53 @@ button {
 }
 
 .letter-paper {
-  min-height: 500px;
-  padding: 46px;
-  background: #fffaf5;
-  border-radius: 34px;
-  box-shadow: 0 30px 80px rgba(62, 50, 50, 0.16);
+
+    min-height:500px;
+
+    padding:46px;
+
+    background:#fffaf5;
+
+    border-radius:34px;
+
+    border:2px solid rgba(97,5,5,.08);
+
+    box-shadow:
+    0 25px 70px rgba(97,5,5,.15);
+
 }
 
-.letter-paper h1 {
-  font-family: var(--serif);
-  font-size: 58px;
-}
+.env-body::after{
 
-.letter-paper p:last-child {
-  font-size: 17px;
-  line-height: 2;
-}
+    content:"❤";
 
-.night {
-  color: #fff;
-  background: radial-gradient(circle at top, #453636 0%, #191317 70%);
-}
+    position:absolute;
 
+    width:58px;
+    height:58px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    left:50%;
+    top:42px;
+
+    transform:translateX(-50%);
+
+    border-radius:50%;
+
+    background:#8b0000;
+
+    color:#fff5f5;
+
+    font-size:20px;
+
+    box-shadow:
+    inset 0 0 8px rgba(255,255,255,.25),
+    0 10px 20px rgba(0,0,0,.25);
+
+}
 .cake-page,
 .final-page {
   min-height: 100vh;
