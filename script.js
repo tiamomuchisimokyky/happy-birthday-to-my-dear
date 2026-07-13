@@ -252,7 +252,8 @@ cutCakeBtn?.addEventListener('click', async () => {
 const poemBtn = $('#poemBtn');
 const poem = $('#poem');
 
-const poemText = `whilom,
+...
+`whilom,
 i found no reason
 to believe
 that love
