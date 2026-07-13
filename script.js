@@ -247,3 +247,113 @@ cutCakeBtn?.addEventListener('click', async () => {
     confetti({ particleCount: 280, spread: 115, origin: { y: 0.62 } });
   }
 });
+
+// ===== Poem Typewriter =====
+const poemBtn = $('#poemBtn');
+const poem = $('#poem');
+
+const poemText = `whilom,
+
+i found no reason
+to believe
+that love
+would ever be kind.
+
+i was convinced
+it merely existed
+to teach hearts
+how to ache,
+and how to leave.
+
+then,
+there was you.
+
+an unforeseen solace
+that quietly
+found its way
+into every corner
+of my life.
+
+you never asked
+to mend
+what had long been broken,
+
+yet somehow,
+you did.
+
+honeybee,
+
+you've become
+the comfort
+i never sought,
+yet now
+cannot imagine
+living without.
+
+though cruel distance
+continues
+to test us,
+it has only taught me
+that devotion
+is not measured
+by how near
+one stands,
+
+but by
+how steadfast
+one remains.
+
+here's to hopin'
+
+that one day,
+our good mornings
+need no longer
+be sent through a screen,
+
+that every longing
+shall find its end,
+
+and that
+i may finally
+call your hand
+my home.
+
+until then,
+
+i shall cherish you
+from every mile
+that separates us,
+
+for none
+could ever alter
+the quiet certainty
+
+that my heart
+
+was always
+
+meant for you.`;
+
+let poemTyped = false;
+
+if (poemBtn && poem) {
+  poem.style.whiteSpace = 'pre-line';
+  poem.textContent = '';
+
+  poemBtn.addEventListener('click', () => {
+    if (poemTyped) return;
+
+    poemTyped = true;
+    let i = 0;
+
+    const typing = setInterval(() => {
+      poem.textContent += poemText[i] || '';
+      i++;
+
+      if (i > poemText.length) {
+        clearInterval(typing);
+        poemBtn.style.display = 'none';
+      }
+    }, 35);
+  });
+}
